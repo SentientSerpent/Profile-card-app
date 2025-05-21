@@ -27,7 +27,7 @@ function FormPage() {
       weaknesses: formData.weaknesses.split(',').map(w => w.trim())
     };
 
-    const res = await fetch('https://profile-card-app-uc1i.onrender.com', {
+    const res = await fetch('https://profile-card-app-uc1i.onrender.com/profile', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
